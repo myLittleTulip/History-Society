@@ -44,6 +44,22 @@
 	  background-color: #b7d7ed;
 	  color: white;
 	}
+
+	* {
+  	  box-sizing: border-box;
+	}
+
+	.column {
+  	  float: left;
+	  width: 50%;
+      padding: 5px;
+	}
+
+	.row::after {
+  	  content: "";
+  	  clear: both;
+  	  display: table;
+	}
 	</style>
 	</head>
 	<body>
@@ -157,7 +173,6 @@
 		<br>
 		<br>
 		<br>
-		<img src="actual pres.jpg" alt="presentation photo 1" style="width:700px" class="center">
 
 	  </div>
 	  <div class="column" style="background-color:rgb(235, 235, 235);">
@@ -185,11 +200,19 @@
 		<br>
 		<br>
 		<br>
-		<img src="daniela pres.jpg" alt="presentation photo 2" style="width:700px" class="center">
 	</div>
 	</div>
 
-
+	<div class="row">
+		
+  <div class="column">
+    	<img src="actual pres.jpg" alt="presentation photo 1" style="width:100%">
+  	</div>
+  <div class="column">
+    	<img src="daniela pres.jpg" alt="presentation photo 2" style="width:100%">
+  	</div>
+		
+	</div>
 		
 		<br>
 		<br>
